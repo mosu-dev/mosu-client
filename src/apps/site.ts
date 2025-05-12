@@ -26,7 +26,7 @@ export const siteConfiguration = {
         },
         {
             label: "로그인",
-            href: "/auth/signin",
+            href: "/auth/member/signin",
         },
     ],
 };

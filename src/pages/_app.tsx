@@ -4,8 +4,7 @@ import type { AppProps } from "next/app";
 
 import { queryClient } from "@/apps/lib/query";
 import "@/apps/styles/globals.css";
-
-import { GlobalLayout } from "./_layout";
+import { GlobalLayout } from "@/apps/ui/\bGlobalLayout";
 
 type AppPropsWithLayout = AppProps & {
     Component: NextPage & { layout?: (page: React.ReactNode) => React.ReactNode };
