@@ -2,11 +2,11 @@ import { ChevronRight } from "lucide-react";
 
 import { cn } from "@/shared/lib/utils";
 
-interface StepNavigatorProps {
-    step: number;
-}
+import { useSignUpContext } from "../contexts/SignUpContext";
 
-export const SignUpStepNavigator = ({ step }: StepNavigatorProps) => {
+export const SignUpStepNavigator = () => {
+    const step = useSignUpContext().state.step;
+
     return (
         <nav>
             <ul className="flex text-sm font-semibold w-full items-center justify-between h-[48px]">
