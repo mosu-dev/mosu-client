@@ -52,7 +52,7 @@ export default function MemberSignInPage() {
                     <Button
                         variant="outline"
                         className="border-black w-full h-[60px] font-semibold text-black text-base"
-                        onClick={() => router.push("/auth/nonmember/signin")}
+                        onClick={() => router.push("/auth/guest/signin")}
                     >
                         수험번호로 비회원 로그인
                     </Button>
