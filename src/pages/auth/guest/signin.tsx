@@ -3,7 +3,7 @@ import { MosuLogo } from "@/apps/ui/MosuLogo";
 import { InputFieldSet } from "@/shared/components/Input";
 import { Button } from "@/shared/ui/button";
 
-export default function NonMemberSignInPage() {
+export default function GuestSignInPage() {
     return (
         <div>
             <header className="my-20">
@@ -32,6 +32,6 @@ export default function NonMemberSignInPage() {
     );
 }
 
-NonMemberSignInPage.layout = (page: React.ReactNode) => {
+GuestSignInPage.layout = (page: React.ReactNode) => {
     return <div className="w-full max-w-[500px] mx-auto px-4">{page}</div>;
 };
