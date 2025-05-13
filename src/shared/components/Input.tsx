@@ -7,7 +7,7 @@ export const Input = ({ ...props }: InputProps) => {
     return (
         <input
             {...props}
-            className="w-full border-b-[#ebebeb] border-b-[1px] h-[52px] focus:outline-none"
+            className="w-full border-b-[#ebebeb] border-b-[1px] h-[52px] focus:outline-none text-lg"
         ></input>
     );
 };
