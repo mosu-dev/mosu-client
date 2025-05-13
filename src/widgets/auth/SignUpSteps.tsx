@@ -166,7 +166,7 @@ export const SignUpStep3 = () => {
                     className="w-full h-[60px] my-10"
                     onClick={() => router.push("/")}
                 >
-                    회원가입 완료
+                    메인화면으로 이동
                 </Button>
             </div>
         </section>
