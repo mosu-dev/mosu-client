@@ -1,5 +1,3 @@
-import { Fragment } from "react";
-
 import { Button } from "../ui/button";
 import { Label } from "../ui/label";
 
@@ -45,7 +43,7 @@ export const InputWithButtonFieldSet = ({
     ...props
 }: InputWithButtonFieldSet) => {
     return (
-        <Fragment>
+        <fieldset>
             <Label htmlFor={id} required={required}>
                 {label}
             </Label>
@@ -55,6 +53,6 @@ export const InputWithButtonFieldSet = ({
                     {buttonLabel}
                 </Button>
             </div>
-        </Fragment>
+        </fieldset>
     );
 };
