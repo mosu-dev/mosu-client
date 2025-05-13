@@ -15,8 +15,10 @@ export default function NoticeFAQPage(props: InferGetStaticPropsType<typeof getS
             {props.items.map((item) => {
                 return (
                     <AccordionItem key={item.id} value={item.title}>
-                        <AccordionTrigger>Q. {item.title}</AccordionTrigger>
-                        <AccordionContent>{item.content}</AccordionContent>
+                        <AccordionTrigger className="text-xl h-20 flex items-center">
+                            Q. {item.title}
+                        </AccordionTrigger>
+                        <AccordionContent className="text-lg">{item.content}</AccordionContent>
                     </AccordionItem>
                 );
             })}
