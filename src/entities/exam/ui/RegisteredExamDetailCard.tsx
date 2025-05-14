@@ -1,3 +1,5 @@
+import { useRouter } from "next/router";
+
 import { cn } from "@/shared/lib/utils";
 
 interface RegisteredExamDetailCardProps {
@@ -15,6 +17,8 @@ export const RegisteredExamDetailCard = ({
     examLocation,
     examSubjects,
 }: RegisteredExamDetailCardProps) => {
+    const router = useRouter();
+
     return (
         <article className="border border-[#E2E2E2] w-full h-fit rounded-md">
             <header className="flex justify-between border-b p-5">
@@ -55,7 +59,7 @@ export const RegisteredExamDetailCard = ({
                     className="border-r-[0.5px] flex-1 p-4 hover:cursor-pointer"
                     onClick={() => {
                         // TODO: 응시과목 변경
-                        console.log(id);
+                        router.push(`/mypage/edit/${id}`);
                     }}
                 >
                     응시과목 변경
