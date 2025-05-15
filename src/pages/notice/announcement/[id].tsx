@@ -64,6 +64,7 @@ export default function NoticeAnnouncementDetailPage() {
             <Button
                 variant="outline"
                 className="flex items-center justify-center text-lg ml-auto mr-0 h-12"
+                onClick={() => router.push("/notice/announcement")}
             >
                 목록으로
             </Button>
