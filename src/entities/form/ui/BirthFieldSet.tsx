@@ -37,6 +37,7 @@ interface BirthFieldSetProps {
     onChange: (year: number, month: number, day: number) => void;
 }
 
+// TODO: 생년월일이 feature/auth-signup, feature/apply에 중복되어 있음 -> entities로 분리 필요
 export const BirthFieldSet = ({
     id = "birth",
     label = "생년월일",

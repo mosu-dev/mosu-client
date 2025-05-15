@@ -1,4 +1,4 @@
-import { FilePreview } from "@/entities/file/ui/FilePreview";
+import { FilePreview } from "@/entities/form/ui/FilePreview";
 
 import { InputFieldSet } from "@/shared/components/Input";
 import { TextareaFieldSet } from "@/shared/components/TextArea";

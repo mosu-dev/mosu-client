@@ -16,11 +16,18 @@ interface InputFieldSetProps extends InputProps {
     id: string;
     label: string;
     required?: boolean;
+    fieldsetClassName?: string;
 }
 
-export const InputFieldSet = ({ id, label, required = false, ...props }: InputFieldSetProps) => {
+export const InputFieldSet = ({
+    id,
+    label,
+    fieldsetClassName,
+    required = false,
+    ...props
+}: InputFieldSetProps) => {
     return (
-        <fieldset>
+        <fieldset className={fieldsetClassName}>
             <Label htmlFor={id} required={required}>
                 {label}
             </Label>
@@ -38,12 +45,13 @@ export const InputWithButtonFieldSet = ({
     id,
     required,
     label,
+    fieldsetClassName,
     buttonLabel,
     buttonOnClick,
     ...props
 }: InputWithButtonFieldSet) => {
     return (
-        <fieldset>
+        <fieldset className={fieldsetClassName}>
             <Label htmlFor={id} required={required}>
                 {label}
             </Label>

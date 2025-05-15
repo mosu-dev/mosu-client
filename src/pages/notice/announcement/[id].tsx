@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 
-import { FilePreviewWithDownload } from "@/entities/file/ui/FilePreviewWithDownload";
+import { FilePreviewWithDownload } from "@/entities/form/ui/FilePreviewWithDownload";
 
 import { Button } from "@/shared/ui/button";
 import { Table, TableHead, TableHeader, TableRow } from "@/shared/ui/table";

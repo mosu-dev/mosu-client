@@ -2,9 +2,9 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 
 import imgSignUpComplete from "@/entities/auth/assets/img-signup-complete.png";
+import { BirthFieldSet } from "@/entities/form/ui/BirthFieldSet";
 
 import { useSignUpContext } from "@/features/auth-signup/contexts/SignUpContext";
-import { BirthFieldSet } from "@/features/auth-signup/ui/BirthFieldSet";
 
 import { ButtonGroupFieldSet } from "@/shared/components/ButtonGroup";
 import { CheckboxFieldSet, CheckboxWithLinkFieldSet } from "@/shared/components/Checkbox";
