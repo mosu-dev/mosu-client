@@ -2,9 +2,10 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { NextPage } from "next";
 import type { AppProps } from "next/app";
 
+import "@/apps/lib/gsap";
 import { queryClient } from "@/apps/lib/query";
 import "@/apps/styles/globals.css";
-import { GlobalLayout } from "@/apps/ui/\bGlobalLayout";
+import { GlobalLayout } from "@/apps/ui/GlobalLayout";
 
 type AppPropsWithLayout = AppProps & {
     Component: NextPage & { layout?: (page: React.ReactNode) => React.ReactNode };
